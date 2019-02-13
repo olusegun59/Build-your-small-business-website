@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+<script src ="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background:url("https://i.imgur.com/idAb4Yr.png");
+  background-size: cover;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: AliceBLue;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0 0 40px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(3,23,23,1), rgba(0,0,0,.3));
+  background: -webkit-linear-gradient(bottom, rgba(3,23,23,1), rgba(0,0,0,.3));
+  background: -moz-linear-gradient(bottom, rgba(3,23,23,1), rgba(0,0,0,.3));
+  padding: 10px;
+  line-height: 30px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 40px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+small {
+  opacity: 0;
+}
+.show-description p {
+  height: 150px;
+}
+.show-description small {
+  opacity: 1;
+}
+.simone{
+  background-image: url("https://i.imgur.com/iCXl0Xr.jpg");
+}
+.luther{
+  background-image: url("https://i.imgur.com/u7qxGHg.jpg");
+}
+.lauryn{
+  background-image: url("https://i.imgur.com/RWOnsGp.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 13px;
+    margin: 20px 0 30px 0;
+  }
+  h3 {
+    font-size:20px;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+h3{
+  color:White;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Old School Music</h1>
+<h2>just a click away</h2>
+<h3>Top songs of the week</h3>
+<div class="simone">
+  <p>Nina Simone's Gifted and Black <span class="price">$24</span><br />
+  <small>Nina Simone left her mark for eternity. Bringing back her memory is always a delight. Serious fans will enjoy the new opportunities that this compilation brings. Track Listing: To Be Young, Gifted and Black; Backlash Blues; I Wish I Knew How It Would Feel To Be Free; Why the King of Love is Dead; Mississippi Goddam; Revolution; Turn! Turn! Turn!; Ain </small></p>
+</div>
+<div class="luther">
+  <p>Luther Vandross: The Classic Christmas Album<span class="price">$13</span><br />
+  <small>2012 holiday collection from the late R&B great. 14 tracks including 'The Christmas Song', 'AT Christmas Time', 'The Mistletoe Jam', 'My Favorite Things' and many more.</small></p>
+</div>
+<div class="lauryn">
+  <p>The Miseducation of Lauryn Hill <span class="price">$40</span><br />
+  <small>This album brought hip-hop to the mainstream. Lots of artist have sampled the songs on this album. This shows the impact it made in the music industry.The Miseducation of Lauryn Hill is a declaration of independence. With it, Ms. Hill put the entire genre of hip-hop on blast and elevated heartbreak to spiritual proportions.</small></p>
+</div>
+<script>
+$('div').on('click', function(){
+  $(this).toggleClass('show-description');
+});
+</script>
+</body>
